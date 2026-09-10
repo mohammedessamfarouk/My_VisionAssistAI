@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.MyVisionAssistAI"
+        parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your theme here -->
+    </style>
+
+    <!-- App Theme -->
+    <style name="Theme.My_VisionAssistAI"
+        parent="Base.Theme.MyVisionAssistAI" />
+
+</resources>

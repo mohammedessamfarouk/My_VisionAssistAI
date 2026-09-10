@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "98204982326",
+    "project_id": "vision-assist-ai",
+    "storage_bucket": "vision-assist-ai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98204982326:android:256dd9d8219a1ba2388c97",
+        "android_client_info": {
+          "package_name": "com.visionassist.ai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvCdrjvK3hcDVvQUKyRTnLa2eBLdP9x18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".GuardianActivity">
+
+    <!-- ============ قسم الربط (يظهر لو لسه مش مربوط) ============ -->
+    <LinearLayout
+        android:id="@+id/pairingSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the blind user's pairing code"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etPairCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pairing code"
+            android:inputType="textCapCharacters"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link"/>
+
+        <TextView
+            android:id="@+id/txtPairingStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#B00020"/>
+
+        <Button
+            android:id="@+id/btnSignOutFromPairing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:backgroundTint="#B00020"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+
+    <!-- ============ قسم عرض الموقع (يظهر بعد الربط) ============ -->
+    <LinearLayout
+        android:id="@+id/locationSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blind user's location"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/txtLocationInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnOpenMaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open in Google Maps"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresh Location"/>
+
+        <Button
+            android:id="@+id/btnViewPhotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Photos"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnUnlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unlink"
+            android:layout_marginTop="24dp"/>
+
+        <Button
+            android:id="@+id/btnSignOutGuardian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:backgroundTint="#B00020"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
